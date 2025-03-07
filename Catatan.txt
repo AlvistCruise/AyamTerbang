@@ -1,0 +1,14 @@
+-> Player Movement (5 Type)
+	-transform.Position (Teleporting)
+	-transform.Translate (mass ignored)
+	-Rigidbody.velocity (Fisik Force terpengaruh)
+	-Rigidbody.MovePosition (
+	-Rigidbody.AddForce (Newton effects)(most)
+		*Impulse
+		*Accel
+		*ChangeVelocity
+
+->Player jump -> Double jump
+->Player dash -> Air dash
+->Skill :(Fireball, Nginjek)
+->GitHub
