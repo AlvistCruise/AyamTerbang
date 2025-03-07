@@ -8,6 +8,8 @@ public class PlayerJump : MonoBehaviour
     public float jumpForce;
     public bool isGrounded;
     private Rigidbody rb;
+    public int totalJump;
+    [HideInInspector] public int currentTotalJump=0;
 
     void Start()
     {
@@ -20,7 +22,10 @@ public class PlayerJump : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded){
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isGrounded=false;
+            currentTotalJump++;
+            if(currentTotalJump >= totalJump){
+                isGrounded= false;
+            }
 
         }
         

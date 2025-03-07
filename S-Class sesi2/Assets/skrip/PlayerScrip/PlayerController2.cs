@@ -8,7 +8,8 @@ public class PlayerController2 : Player
     public float rotationSpeed = 10f; // Kecepatan rotasi player
     private Camera cam; // Referensi ke kamera utama
     private Rigidbody rb; // Referensi ke komponen Rigidbody player
-    private Vector3 moveDirection; // Arah gerakan player
+    [HideInInspector] public Vector3 moveDirection; // Arah gerakan player
+    
 
     private void Start()
     {
